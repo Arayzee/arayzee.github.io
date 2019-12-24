@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "使用Hugo搭建静态博客并发布到Github上",
     "headline" : "使用Hugo搭建静态博客并发布到Github上",
-    "description" : "Hugo的安装 前往Hugo releases下载hugo_xxx_Windows-64bit.zip，解压后将路径添加到PATH。重启终端，运行\nhugo version 如打印出版本号则Hugo安装成功\nHugo搭建博客 1.创建新的项目 hugo new site 项目名 2.添加主题 cd 项目文件夹 git init git submodule add https:\/\/github.com\/budparr\/gohugo-theme-ananke.git themes\/ananke echo \x26#39;theme = \x26#34;ananke\x26#34;\x26#39; \x26gt;\x26gt; config.toml 如需修改主题，请访问themes.gohugo.io\n3.添加内容 hugo new 内容路径 例如：\nhugo new posts\/my-first-post.md 生成的文件默认带有以下内容：\n--- title: \x26#34;My First Post\x26#34; date: 2019-03-26T08:47:11\x2b01:00 draft: true \/\/标记是否为草稿，打包前需确认要展示的文章的draft为false --- 4.启动Hugo server预览 hugo server -D 开启Hugo server后，访问给出的地址即可查看你的博客，默认为http:\/\/localhost:1313\/\n5.打包静态网页 hugo -D 打包后你的项目中会生成一个public文件夹，就是它了\n使用Github发布你的博客 首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的public文件夹关联到这个仓库，推送内容后点开该仓库的Settings，找到GitHub Pages配置，把Source设置为master branch，之后所有人便可通过你的Github用户名.github.io来访问你的博客。",
+    "description" : "Hugo的安装 前往Hugo releases下载hugo_xxx_Windows-64bit.zip，解压后将路径添加到PATH。重启终端，运行\nhugo version 如打印出版本号则Hugo安装成功\nHugo搭建博客 1.创建新的项目 hugo new site 项目名 2.添加主题 cd 项目文件夹 git init git submodule add https:\/\/github.com\/budparr\/gohugo-theme-ananke.git themes\/ananke echo \x26#39;theme = \x26#34;ananke\x26#34;\x26#39; \x26gt;\x26gt; config.toml 如需修改主题，请访问themes.gohugo.io\n3.添加内容 hugo new 内容路径 例如：\nhugo new posts\/my-first-post.md 生成的文件默认带有以下内容：\n--- title: \x26#34;My First Post\x26#34; date: 2019-03-26T08:47:11\x2b01:00 draft: true \/\/标记是否为草稿，打包前需确认要展示的文章的draft为false --- 4.启动Hugo server预览 hugo server -D 开启Hugo server后，访问给出的地址即可查看你的博客，默认为http:\/\/localhost:1313\/\n5.打包静态网页 hugo -D 打包后你的项目中会生成一个public文件夹，就是它了\n使用Github发布你的博客 首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的public文件夹关联到这个仓库，推送内容后点开该仓库的Settings，找到GitHub Pages配置，把Source设置为master branch 之后便可通过你的Github用户名.github.io来访问你的博客。",
     "inLanguage" : "en-us",
     "author" : "Arayzee",
     "creator" : "Arayzee",
@@ -57,7 +57,7 @@
     "datePublished": "2019-12-19 04:47:38 \x2b0800 CST",
     "dateModified" : "2019-12-19 04:47:38 \x2b0800 CST",
     "url" : "http:\/\/example.org\/hugo\/",
-    "wordCount" : "64",
+    "wordCount" : "65",
     "keywords" : [ "Hugo","Github", "Arayzee\x27s Home"]
 }
 </script>
@@ -134,6 +134,8 @@
         
 
         
+            
+        
 
         
         
@@ -176,7 +178,9 @@ draft: true //标记是否为草稿，打包前需确认要展示的文章的dra
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -D
 </code></pre></div><p>打包后你的项目中会生成一个<code>public</code>文件夹，就是它了</p>
 <h2 id="github">使用Github发布你的博客</h2>
-<p>首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的<code>public</code>文件夹关联到这个仓库，推送内容后点开该仓库的<code>Settings</code>，找到<code>GitHub Pages</code>配置，把<code>Source</code>设置为<code>master branch</code>，之后所有人便可通过<a href="">你的Github用户名.github.io</a>来访问你的博客。</p>
+<p>首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的<code>public</code>文件夹关联到这个仓库，推送内容后点开该仓库的<code>Settings</code>，找到<code>GitHub Pages</code>配置，把<code>Source</code>设置为<code>master branch</code>
+<img src="./img-01.png" alt="设置Github Pages">
+之后便可通过<a href="">你的Github用户名.github.io</a>来访问你的博客。</p>
 
     </div>
 
@@ -264,8 +268,9 @@ draft: true //标记是否为草稿，打包前需确认要展示的文章的dra
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 

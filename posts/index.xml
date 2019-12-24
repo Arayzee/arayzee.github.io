@@ -24,7 +24,7 @@ Hugo搭建博客 1.创建新的项目 hugo new site 项目名 2.添加主题 cd 
 hugo new posts/my-first-post.md 生成的文件默认带有以下内容：
 --- title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true //标记是否为草稿，打包前需确认要展示的文章的draft为false --- 4.启动Hugo server预览 hugo server -D 开启Hugo server后，访问给出的地址即可查看你的博客，默认为http://localhost:1313/
 5.打包静态网页 hugo -D 打包后你的项目中会生成一个public文件夹，就是它了
-使用Github发布你的博客 首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的public文件夹关联到这个仓库，推送内容后点开该仓库的Settings，找到GitHub Pages配置，把Source设置为master branch，之后所有人便可通过你的Github用户名.github.io来访问你的博客。</description>
+使用Github发布你的博客 首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的public文件夹关联到这个仓库，推送内容后点开该仓库的Settings，找到GitHub Pages配置，把Source设置为master branch 之后便可通过你的Github用户名.github.io来访问你的博客。</description>
     </item>
     
   </channel>
