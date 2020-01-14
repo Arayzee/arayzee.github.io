@@ -6,10 +6,25 @@
     <description>Recent content in Posts on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Dec 2019 04:47:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 02:38:33 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>http://example.org/html1/</link>
+      <pubDate>Fri, 03 Jan 2020 02:38:33 +0800</pubDate>
+      
+      <guid>http://example.org/html1/</guid>
+      <description>HTML 起源 HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。除 HTML 以外的其它技术则通常用来描述一个网页的表现与展示效果（如 CSS），或功能与行为（如 JavaScript）。
+“超文本”（hypertext）是指连接单个网站内或多个网站间的网页的链接。链接是网络的一个基本方面。只要将内容上传到互联网，并将其与他人创建的页面相链接，你就成为了万维网的积极参与者。
+HTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web 浏览器中显示。HTML 标记包含一些特殊“元素”如 &amp;lt;head&amp;gt;，&amp;lt;title&amp;gt;，&amp;lt;body&amp;gt;，&amp;lt;header&amp;gt;，&amp;lt;footer&amp;gt;，&amp;lt;article&amp;gt;，&amp;lt;section&amp;gt;，&amp;lt;p&amp;gt;，&amp;lt;div&amp;gt;，&amp;lt;span&amp;gt;，&amp;lt;img&amp;gt;，&amp;lt;aside&amp;gt;，&amp;lt;audio&amp;gt;，&amp;lt;canvas&amp;gt;，&amp;lt;datalist&amp;gt;，&amp;lt;details&amp;gt;，&amp;lt;embed&amp;gt;，&amp;lt;nav&amp;gt;，&amp;lt;output&amp;gt;，&amp;lt;progress&amp;gt;，&amp;lt;video&amp;gt; 等等等等。
+HTML 元素通过“标签”（tag）将文本从文档中引出，标签由在“&amp;lt;”和“&amp;gt;”中包裹的元素名组成，HTML 标签里的元素名不区分大小写。也就是说，它们可以用大写，小写或混合形式书写。例如，&amp;lt;title&amp;gt; 标签可以写成 &amp;lt;Title&amp;gt;，&amp;lt;TITLE&amp;gt; 或以任何其他方式。
+HTML由Tim Berners-Lee于1990年创立，一直被用作WWW的信息表示语言。WWW（万维网——World Wide Web）是存储在Internet计算机中、数量巨大的文档的集合。这些文档称为页面，它是一种超文本(Hypertext)信息，可以用于描述超媒体。文本、图形、视频、音频等多媒体，称为超媒体(Hypermedia)。Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是超链接(Hyperlink)。WWW的三大核心是HTML、HTTP、URL，有了WWW才有了上网（输入网址，看到网站）这一概念。
+HTML起手式 在VSCode中创建HTML文件，我们可以使用emmet语法输入!按Tab键快速创建HTML框架，如下：
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--文档类型 --&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--html标签，可声明语言，如中文zh-CN --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;!--声明文件字符编码 --&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;!--禁用缩放，兼容手机 --&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;ie=edge&amp;#34;&amp;gt; &amp;lt;!--告诉IE使用最新内核 --&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;!--标题 --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML章节标签  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  HTML全局属性 HTML所有标签都具有的属性：</description>
+    </item>
     
     <item>
       <title>使用Hugo搭建静态博客并发布到Github上</title>
