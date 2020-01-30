@@ -10,7 +10,7 @@
   
   
   <link rel="prev" href="http://example.org/hugo/" />
-  
+  <link rel="next" href="http://example.org/html2/" />
   <link rel="canonical" href="http://example.org/html1/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           HTML入门笔记1 | Arayzee&#39;s Home
+           HTML入门笔记 | Arayzee&#39;s Home
        
   </title>
-  <meta name="title" content="HTML入门笔记1 | Arayzee&#39;s Home">
+  <meta name="title" content="HTML入门笔记 | Arayzee&#39;s Home">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,8 +44,8 @@
          "@id": "http:\/\/example.org\/"
     },
     "articleSection" : "posts",
-    "name" : "HTML入门笔记1",
-    "headline" : "HTML入门笔记1",
+    "name" : "HTML入门笔记",
+    "headline" : "HTML入门笔记",
     "description" : "HTML 起源 HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。除 HTML 以外的其它技术则通常用来描述一个网页的表现与展示效果（如 CSS），或功能与行为（如 JavaScript）。\n“超文本”（hypertext）是指连接单个网站内或多个网站间的网页的链接。链接是网络的一个基本方面。只要将内容上传到互联网，并将其与他人创建的页面相链接，你就成为了万维网的积极参与者。\nHTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web 浏览器中显示。HTML 标记包含一些特殊“元素”如 \x26lt;head\x26gt;，\x26lt;title\x26gt;，\x26lt;body\x26gt;，\x26lt;header\x26gt;，\x26lt;footer\x26gt;，\x26lt;article\x26gt;，\x26lt;section\x26gt;，\x26lt;p\x26gt;，\x26lt;div\x26gt;，\x26lt;span\x26gt;，\x26lt;img\x26gt;，\x26lt;aside\x26gt;，\x26lt;audio\x26gt;，\x26lt;canvas\x26gt;，\x26lt;datalist\x26gt;，\x26lt;details\x26gt;，\x26lt;embed\x26gt;，\x26lt;nav\x26gt;，\x26lt;output\x26gt;，\x26lt;progress\x26gt;，\x26lt;video\x26gt; 等等等等。\nHTML 元素通过“标签”（tag）将文本从文档中引出，标签由在“\x26lt;”和“\x26gt;”中包裹的元素名组成，HTML 标签里的元素名不区分大小写。也就是说，它们可以用大写，小写或混合形式书写。例如，\x26lt;title\x26gt; 标签可以写成 \x26lt;Title\x26gt;，\x26lt;TITLE\x26gt; 或以任何其他方式。\nHTML由Tim Berners-Lee于1990年创立，一直被用作WWW的信息表示语言。WWW（万维网——World Wide Web）是存储在Internet计算机中、数量巨大的文档的集合。这些文档称为页面，它是一种超文本(Hypertext)信息，可以用于描述超媒体。文本、图形、视频、音频等多媒体，称为超媒体(Hypermedia)。Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是超链接(Hyperlink)。WWW的三大核心是HTML、HTTP、URL，有了WWW才有了上网（输入网址，看到网站）这一概念。\nHTML起手式 在VSCode中创建HTML文件，我们可以使用emmet语法输入!按Tab键快速创建HTML框架，如下：\n\x26lt;!DOCTYPE html\x26gt; \x26lt;!--文档类型 --\x26gt; \x26lt;html lang=\x26#34;en\x26#34;\x26gt; \x26lt;!--html标签，可声明语言，如中文zh-CN --\x26gt; \x26lt;head\x26gt; \x26lt;meta charset=\x26#34;UTF-8\x26#34;\x26gt; \x26lt;!--声明文件字符编码 --\x26gt; \x26lt;meta name=\x26#34;viewport\x26#34; content=\x26#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\x26#34;\x26gt; \x26lt;!--禁用缩放，兼容手机 --\x26gt; \x26lt;meta http-equiv=\x26#34;X-UA-Compatible\x26#34; content=\x26#34;ie=edge\x26#34;\x26gt; \x26lt;!--告诉IE使用最新内核 --\x26gt; \x26lt;title\x26gt;Document\x26lt;\/title\x26gt; \x26lt;!--标题 --\x26gt; \x26lt;\/head\x26gt; \x26lt;body\x26gt; \x26lt;\/body\x26gt; \x26lt;\/html\x26gt; HTML章节标签  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  HTML全局属性 HTML所有标签都具有的属性：",
     "inLanguage" : "en-us",
     "author" : "Arayzee",
@@ -58,7 +58,7 @@
     "dateModified" : "2020-01-03 02:38:33 \x2b0800 CST",
     "url" : "http:\/\/example.org\/html1\/",
     "wordCount" : "133",
-    "keywords" : [  "Arayzee\x27s Home"]
+    "keywords" : [ "HTML", "Arayzee\x27s Home"]
 }
 </script>
 
@@ -116,14 +116,18 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">HTML入门笔记1</h1>
+        <h1 class="post-title" itemprop="name headline">HTML入门笔记</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://example.org/" rel="author">Arayzee</a> with ♥ 
                 <span class="post-time">
                 on <time datetime=2020-01-03 itemprop="datePublished">January 3, 2020</time>
                 </span>
                 in
-                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="http://example.org/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+                        
+                </span>
         </div>
     </header>
     <div class="post-content">
@@ -142,13 +146,13 @@
           
           
 
-          <h2 id="html-">HTML 起源</h2>
+          <h1 id="html-">HTML 起源</h1>
 <p>HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。除 HTML 以外的其它技术则通常用来描述一个网页的表现与展示效果（如 CSS），或功能与行为（如 JavaScript）。</p>
 <p>“超文本”（hypertext）是指连接单个网站内或多个网站间的网页的链接。链接是网络的一个基本方面。只要将内容上传到互联网，并将其与他人创建的页面相链接，你就成为了万维网的积极参与者。</p>
 <p>HTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web 浏览器中显示。HTML 标记包含一些特殊“元素”如 &lt;head&gt;，&lt;title&gt;，&lt;body&gt;，&lt;header&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;section&gt;，&lt;p&gt;，&lt;div&gt;，&lt;span&gt;，&lt;img&gt;，&lt;aside&gt;，&lt;audio&gt;，&lt;canvas&gt;，&lt;datalist&gt;，&lt;details&gt;，&lt;embed&gt;，&lt;nav&gt;，&lt;output&gt;，&lt;progress&gt;，&lt;video&gt; 等等等等。</p>
 <p>HTML 元素通过“标签”（tag）将文本从文档中引出，标签由在“&lt;”和“&gt;”中包裹的元素名组成，HTML 标签里的元素名不区分大小写。也就是说，它们可以用大写，小写或混合形式书写。例如，&lt;title&gt; 标签可以写成 &lt;Title&gt;，&lt;TITLE&gt; 或以任何其他方式。</p>
 <p>HTML由Tim Berners-Lee于1990年创立，一直被用作WWW的信息表示语言。WWW（万维网——World Wide Web）是存储在Internet计算机中、数量巨大的文档的集合。这些文档称为页面，它是一种超文本(Hypertext)信息，可以用于描述超媒体。文本、图形、视频、音频等多媒体，称为超媒体(Hypermedia)。Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是超链接(Hyperlink)。WWW的三大核心是HTML、HTTP、URL，有了WWW才有了上网（输入网址，看到网站）这一概念。</p>
-<h2 id="html">HTML起手式</h2>
+<h1 id="html">HTML起手式</h1>
 <p>在VSCode中创建HTML文件，我们可以使用emmet语法输入<code>!</code>按Tab键快速创建HTML框架，如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span> <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 文档类型 </span><span style="color:#75715e">--&gt;</span>
 &lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> html标签，可声明语言，如中文zh</span><span style="color:#75715e">-</span><span style="color:#75715e">CN </span><span style="color:#75715e">--&gt;</span>
@@ -165,7 +169,7 @@
 &lt;/<span style="color:#f92672">body</span>&gt;
 
 &lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><h2 id="html1">HTML章节标签</h2>
+</code></pre></div><h1 id="html1">HTML章节标签</h1>
 <ul>
 <li>标题 h1~h6</li>
 <li>章节 section</li>
@@ -177,7 +181,7 @@
 <li>旁支内容 aside</li>
 <li>划分 div</li>
 </ul>
-<h2 id="html2">HTML全局属性</h2>
+<h1 id="html2">HTML全局属性</h1>
 <p>HTML所有标签都具有的属性：</p>
 <ul>
 <li>class 类名</li>
@@ -188,11 +192,11 @@
 <li>tabindex 声明用户使用tab浏览时的顺序</li>
 <li>title 完整内容</li>
 </ul>
-<h2 id="heading">常用内容标签</h2>
+<h1 id="heading">常用内容标签</h1>
 <ul>
 <li>ol + li 有序列表</li>
 <li>ul + li 无序列表</li>
-<li>dl + dt + dd 描述信息</li>
+<li>dl + dt + dd 描述列表</li>
 <li>pre 预格式化</li>
 <li>hr 分割线</li>
 <li>br 换行</li>
@@ -230,6 +234,14 @@
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="http://example.org/tags/html/">
+                    #HTML</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="http://example.org/">home</a></span>
@@ -240,6 +252,8 @@
         
         <a href="http://example.org/hugo/" class="prev" rel="prev" title="使用Hugo搭建静态博客并发布到Github上"><i class="iconfont icon-left"></i>&nbsp;使用Hugo搭建静态博客并发布到Github上</a>
          
+        
+        <a href="http://example.org/html2/" class="next" rel="next" title="HTML常用标签">HTML常用标签&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

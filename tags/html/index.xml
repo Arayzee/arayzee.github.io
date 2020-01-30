@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Arayzee&#39;s Home</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on Arayzee&#39;s Home</description>
+    <title>HTML on Arayzee&#39;s Home</title>
+    <link>http://example.org/tags/html/</link>
+    <description>Recent content in HTML on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2020 13:27:08 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -37,22 +37,6 @@ HTML 元素通过“标签”（tag）将文本从文档中引出，标签由在
 HTML由Tim Berners-Lee于1990年创立，一直被用作WWW的信息表示语言。WWW（万维网——World Wide Web）是存储在Internet计算机中、数量巨大的文档的集合。这些文档称为页面，它是一种超文本(Hypertext)信息，可以用于描述超媒体。文本、图形、视频、音频等多媒体，称为超媒体(Hypermedia)。Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是超链接(Hyperlink)。WWW的三大核心是HTML、HTTP、URL，有了WWW才有了上网（输入网址，看到网站）这一概念。
 HTML起手式 在VSCode中创建HTML文件，我们可以使用emmet语法输入!按Tab键快速创建HTML框架，如下：
 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--文档类型 --&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--html标签，可声明语言，如中文zh-CN --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;!--声明文件字符编码 --&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;!--禁用缩放，兼容手机 --&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;ie=edge&amp;#34;&amp;gt; &amp;lt;!--告诉IE使用最新内核 --&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;!--标题 --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML章节标签  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  HTML全局属性 HTML所有标签都具有的属性：</description>
-    </item>
-    
-    <item>
-      <title>使用Hugo搭建静态博客并发布到Github上</title>
-      <link>http://example.org/hugo/</link>
-      <pubDate>Thu, 19 Dec 2019 04:47:38 +0800</pubDate>
-      
-      <guid>http://example.org/hugo/</guid>
-      <description>Hugo的安装 前往Hugo releases下载hugo_xxx_Windows-64bit.zip，解压后将路径添加到PATH。重启终端，运行
-hugo version 如打印出版本号则Hugo安装成功
-Hugo搭建博客 1.创建新的项目 hugo new site 项目名 2.添加主题 cd 项目文件夹 git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml 如需修改主题，请访问themes.gohugo.io
-3.添加内容 hugo new 内容路径 例如：
-hugo new posts/my-first-post.md 生成的文件默认带有以下内容：
---- title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true //标记是否为草稿，打包前需确认要展示的文章的draft为false --- 4.启动Hugo server预览 hugo server -D 开启Hugo server后，访问给出的地址即可查看你的博客，默认为http://localhost:1313/
-5.打包静态网页 hugo -D 打包后你的项目中会生成一个public文件夹，就是它了
-使用Github发布你的博客 首先在创建Github上创建一个名为「你的Github用户名.github.io」的仓库，把打包后的public文件夹关联到这个仓库，推送内容后点开该仓库的Settings，找到GitHub Pages配置，把Source设置为master branch 之后便可通过你的Github用户名.github.io来访问你的博客。</description>
     </item>
     
   </channel>

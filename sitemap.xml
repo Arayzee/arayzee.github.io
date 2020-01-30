@@ -4,7 +4,67 @@
     <url>
       <loc>http://example.org/</loc>
       
-      <lastmod>2020-01-03T02:38:33+08:00</lastmod>
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/categories/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/tags/html/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/html2/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/posts/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/tags/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://example.org/categories/%E5%89%8D%E7%AB%AF/</loc>
+      
+      <lastmod>2020-01-15T13:27:08+08:00</lastmod>
       
       
       
@@ -15,26 +75,6 @@
       <loc>http://example.org/html1/</loc>
       
       <lastmod>2020-01-03T02:38:33+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://example.org/posts/</loc>
-      
-      <lastmod>2020-01-03T02:38:33+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://example.org/categories/</loc>
-      
-      <lastmod>2019-12-19T04:47:38+08:00</lastmod>
       
       
       
@@ -62,27 +102,7 @@
     </url>
   
     <url>
-      <loc>http://example.org/tags/</loc>
-      
-      <lastmod>2019-12-19T04:47:38+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>http://example.org/hugo/</loc>
-      
-      <lastmod>2019-12-19T04:47:38+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://example.org/categories/%E5%89%8D%E7%AB%AF/</loc>
       
       <lastmod>2019-12-19T04:47:38+08:00</lastmod>
       
