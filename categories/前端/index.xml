@@ -6,10 +6,30 @@
     <description>Recent content in 前端 on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Feb 2020 20:44:39 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 14:32:50 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>http://example.org/url/</link>
+      <pubDate>Tue, 04 Feb 2020 14:32:50 +0800</pubDate>
+      
+      <guid>http://example.org/url/</guid>
+      <description>URL URL（Uniform Resource Locator - 统一资源定位系统）是表示资源位置的字符串。
+URL由以下几部分组成：
+协议 + 域名/IP + 端口号 + 路径 + 查询字符串 + 锚点
+ 协议： 表示请求需要使用的协议，对于前端来说只关注HTTP和HTTPS 域名/IP： 表示请求的资源地址，IP地址用于标识该主机在互联网中的位置，而域名则会通过DNS解析为IP 端口号： 主机通过不同的端口号来提供不同的服务，HTTP默认端口号为80，HTTPS默认端口号为443，当请求的端口号为默认端口号时可省略不写 路径： 表示请求的资源路径 查询字符串： 请求时给主机提供的查询参数（同样页面不同内容） 锚点： 用于定位文档中的位置（同样内容不同位置），并不会添加到请求中，仅在本地作用  例如：
+DNS DNS（Domain Name System - 域名系统）是一种分布式网络目录服务，主要用于域名与 IP 地址的相互转换。
+当访问一个域名时，UA会先将域名发送给DNS服务器，然后DNS服务器将域名对应的IP返回给UA，然后UA才会向对应IP的端口发送请求。
+可以使用nslookup命令来查询域名对应的所有IP，例如：
+IP IP（Internet Protocal - 网际互连协议）主要约定了两件事：
+ 如何定位一台设备 如何封装数据报文，和其他设备交流  IP分为外网IP和内网IP，外网IP定位的是路由器在互联网上的位置，而内网IP则由路由器分配，用于定位你的设备。外网和内网之间不互通，其间的交流通过路由器来进行，所以路由器又称为网关。
+几个特殊的IP：
+ 127.0.0.1 表示自己 localhost 通过hosts指定为自己 0.0.0.0 不表示任何设备  可以通过修改hosts文件来为IP自定义一个仅在本地有效的域名，localhost就是这样实现的。具体方法为：
+ 找到C:\Windows\System32\drivers\etc\hosts文件，用管理员权限打开 添加映射关系，语法为IP 域名如127.0.0.1 localhost  可以使用ping命令来查询域名对应的IP以及响应延迟，例如：</description>
+    </item>
     
     <item>
       <title>CSS知识总结</title>
