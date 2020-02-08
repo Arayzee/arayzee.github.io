@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Arayzee&#39;s Home</title>
-    <link>http://example.org/categories/</link>
+    <link>https://arayzee.github.io/categories/</link>
     <description>Recent content in Categories on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Feb 2020 14:32:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 14:53:47 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arayzee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>前端</title>
-      <link>http://example.org/categories/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Tue, 04 Feb 2020 14:32:50 +0800</pubDate>
+      <link>https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Fri, 07 Feb 2020 14:53:47 +0800</pubDate>
       
-      <guid>http://example.org/categories/%E5%89%8D%E7%AB%AF/</guid>
+      <guid>https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
     

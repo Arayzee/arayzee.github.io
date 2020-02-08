@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTML on Arayzee&#39;s Home</title>
-    <link>http://example.org/tags/html/</link>
+    <link>https://arayzee.github.io/tags/html/</link>
     <description>Recent content in HTML on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2020 13:27:08 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arayzee.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTML常用标签</title>
-      <link>http://example.org/html2/</link>
+      <link>https://arayzee.github.io/html2/</link>
       <pubDate>Wed, 15 Jan 2020 13:27:08 +0800</pubDate>
       
-      <guid>http://example.org/html2/</guid>
+      <guid>https://arayzee.github.io/html2/</guid>
       <description>a标签 &amp;lt;a&amp;gt;可以创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。常用属性有：herf、target。
 herf herf有以下几种取值：
 网址  以http://、https://等协议开头的网址，如http://google.com。 以//开头的网址，如//google.com，该写法会继承当前网址的协议。  路径  可使用相对路径或绝对路径，如a/b/c、/a/b/c，注意不要直接双击打开html文件，因为这样打开时，绝对路径会定位到当前盘符的根目录而非html服务的根目录。 若文件在当前目录下，可直接写文件名。  伪协议  javascript:代码;点击a标签后将执行写入的代码。常用javascript:;来实现点击a标签后不采取操作的效果。 mailto:邮箱 点击a标签后向指定邮箱发送邮件。 tel:手机号 点击a标签后向指定号码拨号。  id  #id 点击a标签后跳转到页面中拥有该id的元素的位置。  target target有2种取值：
@@ -26,10 +26,10 @@ herf herf有以下几种取值：
     
     <item>
       <title>HTML入门笔记</title>
-      <link>http://example.org/html1/</link>
+      <link>https://arayzee.github.io/html1/</link>
       <pubDate>Fri, 03 Jan 2020 02:38:33 +0800</pubDate>
       
-      <guid>http://example.org/html1/</guid>
+      <guid>https://arayzee.github.io/html1/</guid>
       <description>HTML 起源 HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。除 HTML 以外的其它技术则通常用来描述一个网页的表现与展示效果（如 CSS），或功能与行为（如 JavaScript）。
 “超文本”（hypertext）是指连接单个网站内或多个网站间的网页的链接。链接是网络的一个基本方面。只要将内容上传到互联网，并将其与他人创建的页面相链接，你就成为了万维网的积极参与者。
 HTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web 浏览器中显示。HTML 标记包含一些特殊“元素”如 &amp;lt;head&amp;gt;，&amp;lt;title&amp;gt;，&amp;lt;body&amp;gt;，&amp;lt;header&amp;gt;，&amp;lt;footer&amp;gt;，&amp;lt;article&amp;gt;，&amp;lt;section&amp;gt;，&amp;lt;p&amp;gt;，&amp;lt;div&amp;gt;，&amp;lt;span&amp;gt;，&amp;lt;img&amp;gt;，&amp;lt;aside&amp;gt;，&amp;lt;audio&amp;gt;，&amp;lt;canvas&amp;gt;，&amp;lt;datalist&amp;gt;，&amp;lt;details&amp;gt;，&amp;lt;embed&amp;gt;，&amp;lt;nav&amp;gt;，&amp;lt;output&amp;gt;，&amp;lt;progress&amp;gt;，&amp;lt;video&amp;gt; 等等等等。

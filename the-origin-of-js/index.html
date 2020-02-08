@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Arayzee">
+  
+  
+  
+  <link rel="prev" href="https://arayzee.github.io/url/" />
+  
+  <link rel="canonical" href="https://arayzee.github.io/the-origin-of-js/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           JavaScript 的诞生 | Arayzee&#39;s Home
+       
+  </title>
+  <meta name="title" content="JavaScript 的诞生 | Arayzee&#39;s Home">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/arayzee.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "JavaScript 的诞生",
+    "headline" : "JavaScript 的诞生",
+    "description" : "缘起 1995年之前，浏览器正如其名，只具备浏览网页的功能，所有交互都需要通过服务器来进行，以当时的网络状况，这一过程可能需要几十秒。即便是最简单的表单验证，也需要等服务器长时间的反复响应，用户体验有多糟糕可想而知。随着网上冲浪的人数越来越多，亟需一种网页脚本语言来解决这一现状。凭借Navigator浏览器而名声鹊起的网景公司（Netscape）看到了这一机遇，决定开发一种网页脚本语言。当时Sun公司正大肆宣扬自家的Java语言，并许诺这种语言可以\x26quot;一次编写，到处运行\x26rdquo;，它看上去很可能成为未来的主宰。于是网景决定与Sun结盟，这就是为什么早期浏览器可以运行Java的原因，只是因为它使得网页过于复杂，所以后来不得不放弃。1995年5月，深受Java影响的网景公司做出了这样一个决策：未来的网页脚本语言必须\x26quot;看上去与Java足够相似\x26rdquo;，但是比Java简单，使得非专业的网页作者也能很快上手。34岁的系统程序员Brendan Eich临危受命，担任了这一语言的设计师，Javascript应运而生。\n图为Navigator浏览器1.0版： 祸根 玩具语言的自我修养 虽说Brendan被任命为Javascript的设计师，但其本人对Java十分不感冒，同时网景对Javascript的要求很低，用来完成表单验证等简单操作就行了，为应付公司安排，Brendan仅花了10天时间设计Javascript，他的设计思路如下：\n 借鉴C语言的基本语法 借鉴Java语言的数据类型和内存管理 借鉴Scheme语言，将函数提升到\x26quot;第一等公民\x26rdquo;（first class）的地位 借鉴Self语言，使用基于原型（prototype）的继承机制  可以说起初Javascript只是一门玩具语言，Brendan万万没想到Javascript会发展为现在这一盛状。由于当时设计时间极短，导致Javascript很多细节考虑的不严谨，甚至连Brendan本人都这样评价自己的Javascript：\n \x26ldquo;与其说我爱Javascript，不如说我恨它。它是C语言和Self语言一夜情的产物。十八世纪英国文学家约翰逊博士说得好：\x26lsquo;它的优秀之处并非原创，它的原创之处并不优秀。\x27（the part that is good is not original, and the part that is original is not good.）\x26rdquo;\n 网景之死 网景凭借Javascript把自己抬升到了一个新的高度，同期，微软为了对抗网景，推出了自家的JScript以及支持JScript的IE3浏览器。为了反击微软，网景决定为Javascript申请国际标准。1997年6月，第一个国际标准ECMA-262正式颁布。要知道，C语言问世将近20年之后，国际标准才颁布，过早的标准化使得Javascript还未来得及调整自身的缺陷就已早早定型，为Javascript留下了许多历史遗留问题。\n可惜好景不长，微软将IE捆绑进Windows，为网景判下了死刑。网景虽然死了，但Javascript的故事还在继续。\n方兴未艾 长期以来Javascript正如网景期望的那样完成着简单的脚本工作，页面开发都是由后端和设计师完成。直到2004年谷歌的Gmail在线网页发布，人们才意识到网页原来不只可以看新闻和图片。其使用的AJAX技术为世界打开了一扇名为“前端”的大门，也把Javascript再一次推上了风口浪尖。\n2008年，谷歌搭载V8引擎的Chrome浏览器横空出世，IE的统治地位不再。得力于快如闪电的V8引擎，Javascript迎来了新的一轮爆发，Node.js、npm、React等技术层出不穷，空前的技术热潮让很多技术可能你刚听说就已经过时，不可谓不壮观。2015年，ECMAScript第六版发布，其带来的许多新特性也让Javascript愈发的有模有样。\n如今，Javascript创造的价值已不可估量，虽然其有许多令人诟病之处，但只要合理的避开那些缺陷，Javascript仍不失为一款值得学习的语言。Javascript避坑指南——《Javascript秘密花园》\n本文部分内容参考自阮一峰博客：Javascript诞生记",
+    "inLanguage" : "en-us",
+    "author" : "Arayzee",
+    "creator" : "Arayzee",
+    "publisher": "Arayzee",
+    "accountablePerson" : "Arayzee",
+    "copyrightHolder" : "Arayzee",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-02-07 14:53:47 \x2b0800 CST",
+    "dateModified" : "2020-02-07 14:53:47 \x2b0800 CST",
+    "url" : "https:\/\/arayzee.github.io\/the-origin-of-js\/",
+    "wordCount" : "38",
+    "keywords" : [ "JS","other", "Arayzee\x27s Home"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">JavaScript 的诞生</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://arayzee.github.io/" rel="author">Arayzee</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-02-07 itemprop="datePublished">February 7, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="heading">缘起</h1>
+<p>1995年之前，浏览器正如其名，只具备浏览网页的功能，所有交互都需要通过服务器来进行，以当时的网络状况，这一过程可能需要几十秒。即便是最简单的表单验证，也需要等服务器长时间的反复响应，用户体验有多糟糕可想而知。随着网上冲浪的人数越来越多，亟需一种网页脚本语言来解决这一现状。凭借Navigator浏览器而名声鹊起的网景公司（Netscape）看到了这一机遇，决定开发一种网页脚本语言。当时Sun公司正大肆宣扬自家的Java语言，并许诺这种语言可以&quot;一次编写，到处运行&rdquo;，它看上去很可能成为未来的主宰。于是网景决定与Sun结盟，这就是为什么早期浏览器可以运行Java的原因，只是因为它使得网页过于复杂，所以后来不得不放弃。1995年5月，深受Java影响的网景公司做出了这样一个决策：未来的网页脚本语言必须&quot;看上去与Java足够相似&rdquo;，但是比Java简单，使得非专业的网页作者也能很快上手。34岁的系统程序员Brendan Eich临危受命，担任了这一语言的设计师，Javascript应运而生。</p>
+<p>图为Navigator浏览器1.0版：
+<img src="/images/tooj/01.png" alt="Navigator浏览器1.0版"></p>
+<h1 id="heading1">祸根</h1>
+<h2 id="heading2">玩具语言的自我修养</h2>
+<p>虽说Brendan被任命为Javascript的设计师，但其本人对Java十分不感冒，同时网景对Javascript的要求很低，用来完成表单验证等简单操作就行了，为应付公司安排，Brendan仅花了10天时间设计Javascript，他的设计思路如下：</p>
+<ol>
+<li>借鉴C语言的基本语法</li>
+<li>借鉴Java语言的数据类型和内存管理</li>
+<li>借鉴Scheme语言，将函数提升到&quot;第一等公民&rdquo;（first class）的地位</li>
+<li>借鉴Self语言，使用基于原型（prototype）的继承机制</li>
+</ol>
+<p>可以说起初Javascript只是一门玩具语言，Brendan万万没想到Javascript会发展为现在这一盛状。由于当时设计时间极短，导致Javascript很多细节考虑的不严谨，甚至连Brendan本人都这样评价自己的Javascript：</p>
+<blockquote>
+<p>&ldquo;与其说我爱Javascript，不如说我恨它。它是C语言和Self语言一夜情的产物。十八世纪英国文学家约翰逊博士说得好：&lsquo;它的优秀之处并非原创，它的原创之处并不优秀。'（the part that is good is not original, and the part that is original is not good.）&rdquo;</p>
+</blockquote>
+<h2 id="heading3">网景之死</h2>
+<p>网景凭借Javascript把自己抬升到了一个新的高度，同期，微软为了对抗网景，推出了自家的JScript以及支持JScript的IE3浏览器。为了反击微软，网景决定为Javascript申请国际标准。1997年6月，第一个国际标准ECMA-262正式颁布。要知道，C语言问世将近20年之后，国际标准才颁布，过早的标准化使得Javascript还未来得及调整自身的缺陷就已早早定型，为Javascript留下了许多历史遗留问题。</p>
+<p>可惜好景不长，微软将IE捆绑进Windows，为网景判下了死刑。网景虽然死了，但Javascript的故事还在继续。</p>
+<h1 id="heading4">方兴未艾</h1>
+<p>长期以来Javascript正如网景期望的那样完成着简单的脚本工作，页面开发都是由后端和设计师完成。直到2004年谷歌的Gmail在线网页发布，人们才意识到网页原来不只可以看新闻和图片。其使用的AJAX技术为世界打开了一扇名为“前端”的大门，也把Javascript再一次推上了风口浪尖。</p>
+<p>2008年，谷歌搭载V8引擎的Chrome浏览器横空出世，IE的统治地位不再。得力于快如闪电的V8引擎，Javascript迎来了新的一轮爆发，Node.js、npm、React等技术层出不穷，空前的技术热潮让很多技术可能你刚听说就已经过时，不可谓不壮观。2015年，ECMAScript第六版发布，其带来的许多新特性也让Javascript愈发的有模有样。</p>
+<p>如今，Javascript创造的价值已不可估量，虽然其有许多令人诟病之处，但只要合理的避开那些缺陷，Javascript仍不失为一款值得学习的语言。Javascript避坑指南——<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/">《Javascript秘密花园》</a></p>
+<p>本文部分内容参考自阮一峰博客：<a href="http://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html">Javascript诞生记</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Arayzee </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://arayzee.github.io/the-origin-of-js/>https://arayzee.github.io/the-origin-of-js/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/js/">
+                    #JS</a></span>
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/other/">
+                    #other</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://arayzee.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://arayzee.github.io/url/" class="prev" rel="prev" title="浅析URL"><i class="iconfont icon-left"></i>&nbsp;浅析URL</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://arayzee.github.io/">Arayzee</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
