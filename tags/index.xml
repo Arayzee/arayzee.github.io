@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2020 14:53:47 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 13:25:30 +0800</lastBuildDate>
     
 	<atom:link href="https://arayzee.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>JS</title>
       <link>https://arayzee.github.io/tags/js/</link>
-      <pubDate>Fri, 07 Feb 2020 14:53:47 +0800</pubDate>
+      <pubDate>Thu, 09 Apr 2020 13:25:30 +0800</pubDate>
       
       <guid>https://arayzee.github.io/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://arayzee.github.io/tags/tech/</link>
+      <pubDate>Thu, 09 Apr 2020 13:25:30 +0800</pubDate>
+      
+      <guid>https://arayzee.github.io/tags/tech/</guid>
       <description></description>
     </item>
     
@@ -26,15 +35,6 @@
       <pubDate>Fri, 07 Feb 2020 14:53:47 +0800</pubDate>
       
       <guid>https://arayzee.github.io/tags/other/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>https://arayzee.github.io/tags/tech/</link>
-      <pubDate>Tue, 04 Feb 2020 14:32:50 +0800</pubDate>
-      
-      <guid>https://arayzee.github.io/tags/tech/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Arayzee">
+  
+  
+  
+  <link rel="prev" href="https://arayzee.github.io/the-origin-of-js/" />
+  
+  <link rel="canonical" href="https://arayzee.github.io/js1/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           JS基本语法 | Arayzee&#39;s Home
+       
+  </title>
+  <meta name="title" content="JS基本语法 | Arayzee&#39;s Home">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/arayzee.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "JS基本语法",
+    "headline" : "JS基本语法",
+    "description" : "表达式和语句 通常表达式都会有值，而语句可能有可能没有。语句可以理解为一个行为，通常会改变环境（声明、赋值）。例如1\x2b2、add(1, 2)、console.log(3)为表达式，var a = 1为语句。\nJS中大部分空格、回车没有实际意义，但是return后面不能加回车。\nJS是大小写敏感的\n标识符的规则 标识符是用来识别具体对象的一个名称。最常见的标识符就是变量名，以及后面要提到的函数名。\n 第一个字符可以是Unicode字母或$或_或中文 后面的字符除了上述几种还可以是数字  条件语句 if else 语句 当指定条件为真，if 语句会执行一段语句。如果条件为假，则执行另一段语句。\n语法：\nif (condition) statement1 [else statement2] condition 值为真或假的表达式\nstatement1 当condition为真时执行的语句。可为任意语句，包括更深层的内部if语句。要执行多条语句，使用块语句（{ \x26hellip; }）将这些语句分组；若不想执行语句，则使用空语句。\nstatement2 如果condition为假且 else从句存在时执行的语句。可为任意语句，包括块语句和嵌套的if语句。\n多层 if\x26hellip;else 语句可使用 else if 从句。\nswitch 语句 switch 语句评估一个表达式，将表达式的值与case子句匹配，并执行与该情况相关联的语句。\n语法：\nswitch (expression) { case value1: \/\/ 当 expression 的结果与 value1 匹配时，执行此处语句  [break;] case value2: \/\/ 当 expression 的结果与 value2 匹配时，执行此处语句  [break;] ... case valueN: \/\/ 当 expression 的结果与 valueN 匹配时，执行此处语句  [break;] [default: \/\/ 如果 expression 与上面的 value 值都不匹配，执行此处语句  [break;]] } expression 一个用来与 case 子语句匹配的表达式。",
+    "inLanguage" : "en-us",
+    "author" : "Arayzee",
+    "creator" : "Arayzee",
+    "publisher": "Arayzee",
+    "accountablePerson" : "Arayzee",
+    "copyrightHolder" : "Arayzee",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-04-09 13:25:30 \x2b0800 CST",
+    "dateModified" : "2020-04-09 13:25:30 \x2b0800 CST",
+    "url" : "https:\/\/arayzee.github.io\/js1\/",
+    "wordCount" : "392",
+    "keywords" : [ "JS","tech", "Arayzee\x27s Home"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">JS基本语法</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://arayzee.github.io/" rel="author">Arayzee</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-04-09 itemprop="datePublished">April 9, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="heading">表达式和语句</h1>
+<p>通常表达式都会有值，而语句可能有可能没有。语句可以理解为一个行为，通常会改变环境（声明、赋值）。例如<code>1+2</code>、<code>add(1, 2)</code>、<code>console.log(3)</code>为表达式，<code>var a = 1</code>为语句。</p>
+<p>JS中大部分空格、回车没有实际意义，但是<code>return</code>后面不能加回车。</p>
+<p><strong>JS是大小写敏感的</strong></p>
+<h1 id="heading1">标识符的规则</h1>
+<p>标识符是用来识别具体对象的一个名称。最常见的标识符就是变量名，以及后面要提到的函数名。</p>
+<ul>
+<li>第一个字符可以是Unicode字母或$或_或中文</li>
+<li>后面的字符除了上述几种还可以是数字</li>
+</ul>
+<h1 id="heading2">条件语句</h1>
+<h2 id="if-else-">if else 语句</h2>
+<p>当指定条件为真，if 语句会执行一段语句。如果条件为假，则执行另一段语句。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">condition</span>)
+   <span style="color:#a6e22e">statement1</span>
+[<span style="color:#66d9ef">else</span>
+   <span style="color:#a6e22e">statement2</span>]
+</code></pre></div><p><code>condition</code> 值为真或假的表达式</p>
+<p><code>statement1</code> 当condition为真时执行的语句。可为任意语句，包括更深层的内部if语句。要执行多条语句，使用块语句（{ &hellip; }）将这些语句分组；若不想执行语句，则使用空语句。</p>
+<p><code>statement2</code> 如果condition为假且 else从句存在时执行的语句。可为任意语句，包括块语句和嵌套的if语句。</p>
+<p>多层 if&hellip;else 语句可使用 else if 从句。</p>
+<h2 id="switch-">switch 语句</h2>
+<p>switch 语句评估一个表达式，将表达式的值与case子句匹配，并执行与该情况相关联的语句。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">expression</span>) {
+  <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value1</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e">// 当 expression 的结果与 value1 匹配时，执行此处语句
+</span><span style="color:#75715e"></span>    [<span style="color:#66d9ef">break</span>;]
+  <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value2</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e">// 当 expression 的结果与 value2 匹配时，执行此处语句
+</span><span style="color:#75715e"></span>    [<span style="color:#66d9ef">break</span>;]
+  ...
+  <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">valueN</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e">// 当 expression 的结果与 valueN 匹配时，执行此处语句
+</span><span style="color:#75715e"></span>    [<span style="color:#66d9ef">break</span>;]
+  [<span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e">// 如果 expression 与上面的 value 值都不匹配，执行此处语句
+</span><span style="color:#75715e"></span>    [<span style="color:#66d9ef">break</span>;]]
+}
+</code></pre></div><p><code>expression</code> 一个用来与 case 子语句匹配的表达式。</p>
+<p><code>case valueN (可选)</code> 用于匹配 expression 的 case 子句。如果 expression 与给定的 valueN 相匹配，则执行该 case 子句中的语句直到该 switch 语句结束或遇到一个 break 。</p>
+<p><code>default (可选)</code> 一个 default 子句；如果给定，这条子句会在 expression 的值与任一 case 语句均不匹配时执行。</p>
+<h2 id="heading3">其他</h2>
+<h3 id="heading4">三元表达式</h3>
+<p>条件（三元）运算符是 JavaScript 仅有的使用三个操作数的运算符。一个条件后面会跟一个问号（?），如果条件为 truthy ，则问号后面的表达式A将会执行；表达式A后面跟着一个冒号（:），如果条件为 falsy ，则冒号后面的表达式B将会执行。本运算符经常作为 if 语句的简捷形式来使用。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">condition</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">exprIfTrue</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">exprIfFalse</span>
+</code></pre></div><p><code>condition</code> 计算结果用作条件的表达式。</p>
+<p><code>exprIfTrue</code> 如果表达式 condition 的计算结果是 truthy（它和 true 相等或者可以转换成 true ），那么表达式 exprIfTrue 将会被求值。</p>
+<p><code>exprIfFalse</code> 如果表达式 condition 的计算结果是 falsy（它可以转换成 false ），那么表达式 exprIfFalse 将会被执行。</p>
+<h3 id="heading5">&amp;&amp;短路逻辑</h3>
+<p><code>A&amp;&amp;B&amp;&amp;C&amp;&amp;D</code>取第一个假值或D，并不会取true/false。</p>
+<h3 id="heading6">||短路逻辑</h3>
+<p><code>A||B||C||D</code>取第一个真值或D，并不会取true/false。</p>
+<h1 id="heading7">循环语句</h1>
+<h2 id="while-">while 语句</h2>
+<p>while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">condition</span>)
+  <span style="color:#a6e22e">statement</span>
+</code></pre></div><p><code>condition</code> 条件表达式，在每次循环前被求值。如果求值为真，statement就会被执行。如果求值为假，则跳出while循环执行后面的语句。</p>
+<p><code>statement</code> 只要条件表达式求值为真，该语句就会一直被执行。要在循环中执行多条语句，可以使用块语句（{ &hellip; }）包住多条语句。</p>
+<h2 id="for-">for 语句</h2>
+<p>for语句是while语句的语法糖。for 语句用于创建一个循环，它包含了三个可选的表达式，这三个表达式被包围在圆括号之中，使用分号分隔，后跟一个用于在循环中执行的语句（通常是一个块语句）。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span> ([<span style="color:#a6e22e">initialization</span>]; [<span style="color:#a6e22e">condition</span>]; [<span style="color:#66d9ef">final</span><span style="color:#f92672">-</span><span style="color:#a6e22e">expression</span>])
+   <span style="color:#a6e22e">statement</span>
+</code></pre></div><p><code>initialization</code> 一个表达式 (包含赋值语句) 或者变量声明。典型地被用于初始化一个计数器。该表达式可以使用 var 或 let 关键字声明新的变量，使用 var 声明的变量不是该循环的局部变量，而是与 for 循环处在同样的作用域中。用 let 声明的变量是语句的局部变量。该表达式的结果无意义。</p>
+<p><code>condition</code> 一个条件表达式被用于确定每一次循环是否能被执行。如果该表达式的结果为 true，statement 将被执行。这个表达式是可选的。如果被忽略，那么就被认为永远为真。如果计算结果为假，那么执行流程将被跳到 for 语句结构后面的第一条语句。</p>
+<p><code>final-expression</code> 每次循环的最后都要执行的表达式。执行时机是在下一次 condition 的计算之前。通常被用于更新或者递增计数器变量。</p>
+<p><code>statement</code> 只要condition的结果为true就会被执行的语句。要在循环体内执行多条语句，使用一个块语句（{ &hellip; }）来包含要执行的语句。没有任何语句要执行，使用一个空语句（;）。</p>
+<h2 id="break--continue">break 和 continue</h2>
+<p>break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。</p>
+<p>continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。</p>
+<p>continue 与 break 的区别在于， continue 并不会终止循环的迭代，而是：</p>
+<ul>
+<li>在 while 循环中，控制流跳转回条件判断；</li>
+<li>在 for 循环中，控制流跳转到更新语句。</li>
+</ul>
+<h2 id="label">label</h2>
+<p>标记语句可以和 break 或 continue 语句一起使用。标记就是在一条语句前面加个可以引用的标识符（identifier）。</p>
+<p>语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">label</span> <span style="color:#f92672">:</span>
+   <span style="color:#a6e22e">statement</span>
+</code></pre></div><p><code>label</code> 任何不属于保留关键字的 JavaScript 标识符。</p>
+<p><code>statement</code> JavaScript 语句。break 可用于任何标记语句，而 continue 可用于循环标记语句。</p>
+<p>示例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">j</span>;
+
+    <span style="color:#a6e22e">loop1</span><span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {      <span style="color:#75715e">//The first for statement is labeled &#34;loop1&#34;
+</span><span style="color:#75715e"></span>       <span style="color:#a6e22e">loop2</span><span style="color:#f92672">:</span>
+       <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">j</span><span style="color:#f92672">++</span>) {   <span style="color:#75715e">//The second for statement is labeled &#34;loop2&#34;
+</span><span style="color:#75715e"></span>          <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>) {
+             <span style="color:#66d9ef">continue</span> <span style="color:#a6e22e">loop1</span>;
+          }
+          <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;i = &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;, j = &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">j</span>);
+       }
+    }
+
+<span style="color:#75715e">// Output is:
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 0, j = 0&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 0, j = 1&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 0, j = 2&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 1, j = 0&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 2, j = 0&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 2, j = 1&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">//   &#34;i = 2, j = 2&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">// Notice how it skips both &#34;i = 1, j = 1&#34; and &#34;i = 1, j = 2&#34;
+</span></code></pre></div><p><strong>注意：</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+  <span style="color:#a6e22e">foo</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>
+}
+</code></pre></div><p>上述代码不是一个对象，<code>foo</code>是label，内容为<code>1</code>。</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Arayzee </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://arayzee.github.io/js1/>https://arayzee.github.io/js1/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/js/">
+                    #JS</a></span>
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/tech/">
+                    #tech</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://arayzee.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://arayzee.github.io/the-origin-of-js/" class="prev" rel="prev" title="JavaScript 的诞生"><i class="iconfont icon-left"></i>&nbsp;JavaScript 的诞生</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://arayzee.github.io/">Arayzee</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

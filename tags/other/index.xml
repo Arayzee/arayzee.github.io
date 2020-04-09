@@ -26,7 +26,7 @@
 方兴未艾 长期以来Javascript正如网景期望的那样完成着简单的脚本工作，页面开发都是由后端和设计师完成。直到2004年谷歌的Gmail在线网页发布，人们才意识到网页原来不只可以看新闻和图片。其使用的AJAX技术为世界打开了一扇名为“前端”的大门，也把Javascript再一次推上了风口浪尖。
 2008年，谷歌搭载V8引擎的Chrome浏览器横空出世，IE的统治地位不再。得力于快如闪电的V8引擎，Javascript迎来了新的一轮爆发，Node.js、npm、React等技术层出不穷，空前的技术热潮让很多技术可能你刚听说就已经过时，不可谓不壮观。2015年，ECMAScript第六版发布，其带来的许多新特性也让Javascript愈发的有模有样。
 如今，Javascript创造的价值已不可估量，虽然其有许多令人诟病之处，但只要合理的避开那些缺陷，Javascript仍不失为一款值得学习的语言。Javascript避坑指南——《Javascript秘密花园》
-本文部分内容参考自阮一峰博客：Javascript诞生记</description>
+ 本文部分内容参考自阮一峰博客：Javascript诞生记</description>
     </item>
     
   </channel>
