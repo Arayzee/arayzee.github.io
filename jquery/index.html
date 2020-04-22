@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Arayzee">
+  
+  
+  
+  <link rel="prev" href="https://arayzee.github.io/js3/" />
+  
+  <link rel="canonical" href="https://arayzee.github.io/jquery/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           jQuery基础 | Arayzee&#39;s Home
+       
+  </title>
+  <meta name="title" content="jQuery基础 | Arayzee&#39;s Home">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/arayzee.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "jQuery基础",
+    "headline" : "jQuery基础",
+    "description" : "jQuery作为前端最长寿的库迄今为止已经存在了14年了，或许它早该过时，可实际上目前仍有80%左右的网站使用着jQuery。时间与用户证明了jQuery的可靠性，其优雅的设计模式与简洁的代码依然值得今天的我们学习。\n jQuery 如何获取元素 \x26ldquo;选择某个网页元素，然后对其进行某种操作\x26quot;是jQuery的基本设计思想和主要用法。\n把选择表达式传入jQuery构造函数，然后将得到封装好API的被选中元素的jQuery对象。\n选择表达式可以是CSS选择器：\n$(document) \/\/选择整个文档对象  $(\x26#39;#myId\x26#39;) \/\/选择ID为myId的网页元素  $(\x26#39;div.myClass\x26#39;) \/\/ 选择class为myClass的div元素  $(\x26#39;input[name=first]\x26#39;) \/\/ 选择name属性等于first的input元素 也可以是jQuery特有表达式：\n$(\x26#39;a:first\x26#39;) \/\/选择网页中第一个a元素  $(\x26#39;tr:odd\x26#39;) \/\/选择表格的奇数行  $(\x26#39;#myForm :input\x26#39;) \/\/ 选择表单中的input元素  $(\x26#39;div:visible\x26#39;) \/\/选择可见的div元素  $(\x26#39;div:gt(2)\x26#39;) \/\/ 选择所有的div元素，除了前三个  $(\x26#39;div:animated\x26#39;) \/\/ 选择当前处于动画状态的div元素 此外，jQuery还支持改变结果集，通过强大的过滤器来对结果进行筛选、移动：\n筛选： $(\x26#39;div\x26#39;).has(\x26#39;p\x26#39;); \/\/ 选择包含p元素的div元素  $(\x26#39;div\x26#39;).not(\x26#39;.myClass\x26#39;); \/\/选择class不等于myClass的div元素  $(\x26#39;div\x26#39;).filter(\x26#39;.myClass\x26#39;); \/\/选择class等于myClass的div元素  $(\x26#39;div\x26#39;).first(); \/\/选择第1个div元素  $(\x26#39;div\x26#39;).eq(5); \/\/选择第6个div元素  移动： $(\x26#39;div\x26#39;).next(\x26#39;p\x26#39;); \/\/选择div元素后面的第一个p元素  $(\x26#39;div\x26#39;).parent(); \/\/选择div元素的父元素  $(\x26#39;div\x26#39;).closest(\x26#39;form\x26#39;); \/\/选择离div最近的那个form父元素  $(\x26#39;div\x26#39;).",
+    "inLanguage" : "en-us",
+    "author" : "Arayzee",
+    "creator" : "Arayzee",
+    "publisher": "Arayzee",
+    "accountablePerson" : "Arayzee",
+    "copyrightHolder" : "Arayzee",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-04-22 21:58:39 \x2b0800 CST",
+    "dateModified" : "2020-04-22 21:58:39 \x2b0800 CST",
+    "url" : "https:\/\/arayzee.github.io\/jquery\/",
+    "wordCount" : "93",
+    "keywords" : [ "JS","tech", "Arayzee\x27s Home"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://arayzee.github.io/">Arayzee&#39;s Home</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">jQuery基础</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://arayzee.github.io/" rel="author">Arayzee</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-04-22 itemprop="datePublished">April 22, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>jQuery作为前端最长寿的库迄今为止已经存在了14年了，或许它早该过时，可实际上目前仍有80%左右的网站使用着jQuery。时间与用户证明了jQuery的可靠性，其优雅的设计模式与简洁的代码依然值得今天的我们学习。</p>
+<hr>
+<h1 id="jquery-">jQuery 如何获取元素</h1>
+<p>&ldquo;选择某个网页元素，然后对其进行某种操作&quot;是jQuery的基本设计思想和主要用法。</p>
+<p>把选择表达式传入jQuery构造函数，然后将得到封装好API的被选中元素的jQuery对象。</p>
+<p>选择表达式可以是CSS选择器：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(document) <span style="color:#75715e">//选择整个文档对象
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#myId&#39;</span>) <span style="color:#75715e">//选择ID为myId的网页元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div.myClass&#39;</span>) <span style="color:#75715e">// 选择class为myClass的div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;input[name=first]&#39;</span>) <span style="color:#75715e">// 选择name属性等于first的input元素
+</span></code></pre></div><p>也可以是jQuery特有表达式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;a:first&#39;</span>) <span style="color:#75715e">//选择网页中第一个a元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;tr:odd&#39;</span>) <span style="color:#75715e">//选择表格的奇数行
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#myForm :input&#39;</span>) <span style="color:#75715e">// 选择表单中的input元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:visible&#39;</span>) <span style="color:#75715e">//选择可见的div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:gt(2)&#39;</span>) <span style="color:#75715e">// 选择所有的div元素，除了前三个
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:animated&#39;</span>) <span style="color:#75715e">// 选择当前处于动画状态的div元素
+</span></code></pre></div><p>此外，jQuery还支持改变结果集，通过强大的过滤器来对结果进行筛选、移动：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">筛选</span><span style="color:#960050;background-color:#1e0010">：</span>
+
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;p&#39;</span>); <span style="color:#75715e">// 选择包含p元素的div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">not</span>(<span style="color:#e6db74">&#39;.myClass&#39;</span>); <span style="color:#75715e">//选择class不等于myClass的div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.myClass&#39;</span>); <span style="color:#75715e">//选择class等于myClass的div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">first</span>(); <span style="color:#75715e">//选择第1个div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">5</span>); <span style="color:#75715e">//选择第6个div元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">移动</span><span style="color:#960050;background-color:#1e0010">：</span>
+
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">next</span>(<span style="color:#e6db74">&#39;p&#39;</span>); <span style="color:#75715e">//选择div元素后面的第一个p元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">parent</span>(); <span style="color:#75715e">//选择div元素的父元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">closest</span>(<span style="color:#e6db74">&#39;form&#39;</span>); <span style="color:#75715e">//选择离div最近的那个form父元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">children</span>(); <span style="color:#75715e">//选择div的所有子元素
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">siblings</span>(); <span style="color:#75715e">//选择div的同级元素
+</span></code></pre></div><hr>
+<h1 id="jquery">jQuery链式操作</h1>
+<p>jQuery最令人称道的一点就是链式操作，其原理为在每一步操作后返回一个jQuery对象，使得每一步操作可以连在一起，看似简单却体现了jQuery设计模式的简洁与优雅。</p>
+<p>示例代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>)
+
+　.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;h3&#39;</span>)
+
+　.<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">2</span>)
+
+　.<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>)
+
+　.<span style="color:#a6e22e">end</span>() <span style="color:#75715e">//退回到选中所有的h3元素的那一步
+</span><span style="color:#75715e"></span>
+　.<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">0</span>) <span style="color:#75715e">//选中第一个h3元素
+</span><span style="color:#75715e"></span>
+　.<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;World&#39;</span>); <span style="color:#75715e">//将它的内容改为World
+</span></code></pre></div><hr>
+<h1 id="jquery-api">jQuery 常用API</h1>
+<h3 id="heading">创建元素</h3>
+<blockquote>
+<p>append() - 在被选元素的结尾插入内容<!-- raw HTML omitted -->
+prepend() - 在被选元素的开头插入内容<!-- raw HTML omitted -->
+after() - 在被选元素之后插入内容<!-- raw HTML omitted -->
+before() - 在被选元素之前插入内容</p>
+</blockquote>
+<h3 id="heading1">移动元素</h3>
+<blockquote>
+<p>a.insertAfter(b) - 把a元素移动到b元素后面<!-- raw HTML omitted -->
+b.after(a) - 把b元素加到a元素前面<!-- raw HTML omitted --><!-- raw HTML omitted -->
+表面上看，这两种方法的效果是一样的，唯一的不同似乎只是操作视角的不同。但是实际上，它们有一个重大差别，那就是返回的元素不一样。第一种方法返回div元素，第二种方法返回p元素。</p>
+</blockquote>
+<h3 id="heading2">完整文档</h3>
+<p>完整文档可访问 <a href="https://www.jquery123.com/">jQuery中文文档</a></p>
+<hr>
+<p>本文部分内容参考自 <a href="http://www.ruanyifeng.com/blog/2011/07/jquery_fundamentals.html">jQuery设计思想——阮一峰</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Arayzee </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://arayzee.github.io/jquery/>https://arayzee.github.io/jquery/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/js/">
+                    #JS</a></span>
+            
+            <span class="tag"><a href="https://arayzee.github.io/tags/tech/">
+                    #tech</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://arayzee.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://arayzee.github.io/js3/" class="prev" rel="prev" title="JS函数执行时机"><i class="iconfont icon-left"></i>&nbsp;JS函数执行时机</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://arayzee.github.io/">Arayzee</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

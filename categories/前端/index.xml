@@ -6,10 +6,25 @@
     <description>Recent content in 前端 on Arayzee&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2020 22:08:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 21:58:39 +0800</lastBuildDate>
     
 	<atom:link href="https://arayzee.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jQuery基础</title>
+      <link>https://arayzee.github.io/jquery/</link>
+      <pubDate>Wed, 22 Apr 2020 21:58:39 +0800</pubDate>
+      
+      <guid>https://arayzee.github.io/jquery/</guid>
+      <description>jQuery作为前端最长寿的库迄今为止已经存在了14年了，或许它早该过时，可实际上目前仍有80%左右的网站使用着jQuery。时间与用户证明了jQuery的可靠性，其优雅的设计模式与简洁的代码依然值得今天的我们学习。
+ jQuery 如何获取元素 &amp;ldquo;选择某个网页元素，然后对其进行某种操作&amp;quot;是jQuery的基本设计思想和主要用法。
+把选择表达式传入jQuery构造函数，然后将得到封装好API的被选中元素的jQuery对象。
+选择表达式可以是CSS选择器：
+$(document) //选择整个文档对象  $(&amp;#39;#myId&amp;#39;) //选择ID为myId的网页元素  $(&amp;#39;div.myClass&amp;#39;) // 选择class为myClass的div元素  $(&amp;#39;input[name=first]&amp;#39;) // 选择name属性等于first的input元素 也可以是jQuery特有表达式：
+$(&amp;#39;a:first&amp;#39;) //选择网页中第一个a元素  $(&amp;#39;tr:odd&amp;#39;) //选择表格的奇数行  $(&amp;#39;#myForm :input&amp;#39;) // 选择表单中的input元素  $(&amp;#39;div:visible&amp;#39;) //选择可见的div元素  $(&amp;#39;div:gt(2)&amp;#39;) // 选择所有的div元素，除了前三个  $(&amp;#39;div:animated&amp;#39;) // 选择当前处于动画状态的div元素 此外，jQuery还支持改变结果集，通过强大的过滤器来对结果进行筛选、移动：
+筛选： $(&amp;#39;div&amp;#39;).has(&amp;#39;p&amp;#39;); // 选择包含p元素的div元素  $(&amp;#39;div&amp;#39;).not(&amp;#39;.myClass&amp;#39;); //选择class不等于myClass的div元素  $(&amp;#39;div&amp;#39;).filter(&amp;#39;.myClass&amp;#39;); //选择class等于myClass的div元素  $(&amp;#39;div&amp;#39;).first(); //选择第1个div元素  $(&amp;#39;div&amp;#39;).eq(5); //选择第6个div元素  移动： $(&amp;#39;div&amp;#39;).next(&amp;#39;p&amp;#39;); //选择div元素后面的第一个p元素  $(&amp;#39;div&amp;#39;).parent(); //选择div元素的父元素  $(&amp;#39;div&amp;#39;).closest(&amp;#39;form&amp;#39;); //选择离div最近的那个form父元素  $(&amp;#39;div&amp;#39;).</description>
+    </item>
     
     <item>
       <title>JS函数执行时机</title>
